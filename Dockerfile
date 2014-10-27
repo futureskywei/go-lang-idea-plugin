@@ -1,5 +1,6 @@
 FROM codejuggle/base:latest
 
+RUN apt-get update; apt-get -y upgrade
 RUN apt-get -y install ant git openjdk-6-jdk
 
 ENV JAVA_HOME /usr/lib/jvm/java-6-openjdk-amd64
