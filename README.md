@@ -6,5 +6,4 @@ This is a small Docker recipe to build the latest `go-lang-idea-plugin` dev vers
 ## How to use this
 
     docker run --rm -v .:/target codejuggle/go-lang-idea-plugin
-
-The container will build the plugin and copy the built plugin to `/target` which is mounted to current directory.
+    cp /data/go-lang-idea-plugin/dist/ro.redeul.google.go.jar /target
