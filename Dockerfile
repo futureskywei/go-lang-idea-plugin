@@ -7,7 +7,7 @@ ENV JAVA_HOME /usr/lib/jvm/java-7-openjdk-amd64
 
 WORKDIR /data
 
-RUN wget -O idea.tar.gz http://download.jetbrains.com/idea/ideaIC-14.tar.gz
+RUN wget -O idea.tar.gz http://download.jetbrains.com/idea/ideaIC-14.0.2.tar.gz
 RUN tar xzf idea.tar.gz && rm -f idea.tar.gz
 
 ADD dockercachebuster.dat /tmp/cachebuster
